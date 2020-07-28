@@ -57,6 +57,52 @@ body {
   font-size: 2.4vw;
 }
 
+.main-header .primary-nav .nav-menu:hover .sub-menu {
+  display: block;
+}
+
+.main-header .primary-nav .nav-menu .sub-menu {
+  display: none;
+  position: relative;
+  top: 20px;
+  right: 78px;
+  border-top: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 200px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 2;
+}
+
+.main-header .primary-nav .nav-menu .sub-menu .sub-menu-list {
+  list-style-type: none;
+}
+
+.main-header .primary-nav .nav-menu .sub-menu .sub-menu-list li a {
+  margin: 0 0 0 -42px;
+  padding: 12px 16px;
+  display: block;
+}
+
+.main-header .primary-nav .nav-menu .sub-menu .sub-menu-list li a:hover {
+  background-color: rgba(60, 60, 60, 0.8);
+}
+
+.main-header .primary-nav .nav-menu .sub-menu:after, .main-header .primary-nav .nav-menu .sub-menu:before {
+  bottom: 100%;
+  left: 45%;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+}
+
+.main-header .primary-nav .nav-menu .sub-menu:before {
+  border-bottom-color: white;
+  border-width: 12px;
+}
+
 .main-header .primary-nav .nav-tab {
   float: left;
   margin: 0 0 0 2%;
