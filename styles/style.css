@@ -79,6 +79,28 @@ body {
   color: white;
 }
 
+.main-header .secondary-nav .profile-icon {
+  float: right;
+  position: relative;
+  bottom: 22px;
+  width: 30px;
+  height: 30px;
+}
+
+.main-header .secondary-nav .profile-icon .circle {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  text-align: center;
+}
+
+.main-header .secondary-nav .profile-icon .circle p {
+  color: #191919;
+  position: relative;
+  top: 6px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -107,6 +129,16 @@ body {
   }
   .fa-search {
     font-size: 1.2vw !important;
+  }
+  .profile-icon {
+    bottom: 24px !important;
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .profile-icon p {
+    font-size: 16px !important;
+    position: relative;
+    top: 9px !important;
   }
 }
 
