@@ -188,6 +188,14 @@ body {
   min-width: 100px;
 }
 
+.main-container .billboard-pane .fill-container .info-wrapper .description {
+  color: white;
+  font-size: 1.4vw;
+  line-height: 150%;
+  margin: 4% 0 0 0;
+  text-shadow: 2px 2px 4px #191919;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
