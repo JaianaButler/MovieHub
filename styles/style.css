@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background: #191919;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -59,8 +64,32 @@ body {
   font-size: 0.95vw;
 }
 
+.main-header .secondary-nav {
+  float: right;
+  color: white;
+}
+
+.main-header .secondary-nav .search-box {
+  float: left;
+  margin: 4px 20px 0 0;
+}
+
+.main-header .secondary-nav .search-box .fa-search {
+  font-size: 2.4vw;
+  color: white;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .fa-search {
+    font-size: 2vw !important;
+  }
+  .nav-menu {
+    font-size: 2vw !important;
+  }
+}
+
 /* Medium devices (landscape tablets, 868px and up) */
 @media only screen and (min-width: 868px) {
   .main-header {
@@ -71,6 +100,12 @@ body {
   }
   .nav-tab {
     display: inline-block !important;
+    font-size: 1.2vw !important;
+  }
+  .search-box {
+    margin: 0px 20px 3px 0;
+  }
+  .fa-search {
     font-size: 1.2vw !important;
   }
 }
