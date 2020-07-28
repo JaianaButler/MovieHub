@@ -19,6 +19,9 @@ body {
     z-index: 2;
     background: transparent;
     padding: 1.8% 4% 0 4%;
+    transition: background .4s;
+
+    &.scrolled { background: $primaryColor; }
 
     .logo {
         width: 6%; height: auto; 

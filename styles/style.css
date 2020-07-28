@@ -17,6 +17,12 @@ body {
   z-index: 2;
   background: transparent;
   padding: 1.8% 4% 0 4%;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+}
+
+.main-header.scrolled {
+  background: #191919;
 }
 
 .main-header .logo {
