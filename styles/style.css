@@ -196,6 +196,49 @@ body {
   text-shadow: 2px 2px 4px #191919;
 }
 
+.main-container .billboard-pane .fill-container .controls {
+  margin: 1% 0 0 0;
+}
+
+.main-container .billboard-pane .fill-container .controls .control-item {
+  float: left;
+  margin: 0 2% 0 0;
+}
+
+.main-container .billboard-pane .fill-container .controls .control-item .play-button {
+  width: 8vw;
+  height: 3vw;
+  background: white;
+  border-radius: 6%;
+  border: none;
+  color: #191919;
+  font-size: 1.4vw;
+}
+
+.main-container .billboard-pane .fill-container .controls .control-item .play-button:hover {
+  background: #c8c8c8;
+  cursor: pointer;
+}
+
+.main-container .billboard-pane .fill-container .controls .control-item .add-button {
+  width: 18vw;
+  height: auto;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  font-size: 1.4vw;
+}
+
+.main-container .billboard-pane .fill-container .controls .control-item .add-button:hover {
+  cursor: pointer;
+  color: #c8c8c8;
+}
+
+.main-container .billboard-pane .fill-container .controls .add-item {
+  padding: 4px 0 0 0;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -234,6 +277,9 @@ body {
     font-size: 16px !important;
     position: relative;
     top: 9px !important;
+  }
+  .add-item {
+    padding: 7px 0 0 0 !important;
   }
 }
 
