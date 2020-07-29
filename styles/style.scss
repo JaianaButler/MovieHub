@@ -112,7 +112,7 @@ body {
 
         .search-box {
             float: left;
-            margin: 4px 20px 0 0;
+            margin: 0px 20px 0 0;
 
             .fa-search {
                 font-size: 2.4vw;
@@ -176,7 +176,7 @@ body {
                 }
             }
 
-            .controls {
+            .control-buttons {
                 margin: 1% 0 0 0;
 
                 .control-item {
@@ -218,6 +218,25 @@ body {
             }
         }
     }
+
+    .slider-wrapper {
+        width: 100%; height: 68%;
+        position: relative;
+        bottom: 60px;
+
+        .slider-header {
+            color: $secondaryColor;
+            margin: 0 0 0 50px;
+        }
+    
+        .preview {
+            width: 100%; height: 100%;
+            //border: 1px solid white;
+            border-radius: 4px;
+        }
+    }
+
+
 }
 
 
@@ -242,7 +261,7 @@ body {
         font-size: 1.2vw !important;
     }
 
-    .search-box { margin: 0px 20px 3px 0; }
+    .search-box { margin: 0px 20px 3px 0 !important;}
 
     .fa-search { font-size: 1.2vw !important; }
 

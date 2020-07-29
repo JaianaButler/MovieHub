@@ -4,16 +4,22 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
-        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="styles/style.css" />
 
         <!-- Font Awesome CSS Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Required Core Stylesheet -->
+        <link rel="stylesheet" href="styles/glide.core.min.css">
+        
+        <!-- Optional Theme Stylesheet -->
+        <link rel="stylesheet" href="styles/glide.theme.min.css">
         
         <title>Movie Hub</title>
     </head>
     <body>
         <header class="main-header">
-            <img src="images/logo.png" alt="Movie Hub" class="logo">
+            <img src="images/logo.png" alt="Movie Hub Logo" class="logo">
             <ul class="primary-nav">
                 <li class="nav-menu">
                     <a href="#" class="menu-trigger" role="button">Browse</a>
@@ -27,10 +33,10 @@
                     </div>
                 </li>
 
-                <li class="nav-tab"><a href="#" class="active">Home</a></li>
-                <li class="nav-tab"><a href="#">TV Shows</a></li>
-                <li class="nav-tab"><a href="#">Movies</a></li>
-                <li class="nav-tab"><a href="#">My Hub</a></li>
+                <li class="nav-tab"><a href="#" class="active" title="Go to home page">Home</a></li>
+                <li class="nav-tab"><a href="#" title="See all TV shows">TV Shows</a></li>
+                <li class="nav-tab"><a href="#" title="See all movies">Movies</a></li>
+                <li class="nav-tab"><a href="#" title="Go to My Hub">My Hub</a></li>
             </ul>
             <div class="secondary-nav">
                 <div class="search-box">
@@ -45,14 +51,14 @@
 
         <div class="main-container">
             <div class="billboard-pane">
-                <img src="images/joker4.gif" alt="" class="title-image">
+                <img src="images/joker4.gif" alt="The Joker 2019 movie image" class="title-image">
 
                 <div class="fill-container">
                     <div class="info-wrapper">
-                        <img src="images/joker-title-logo.png" alt="Joker" class="title-logo">
+                        <img src="images/joker-title-logo.png" alt="The Joker 2019 movie logo" class="title-logo">
                         <div class="description">Isolated, bullied and disregarded by society, Arthur Fleck begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker.</div>
                     </div>
-                    <div class="controls">
+                    <div class="control-buttons">
                         <div class="control-item play-item">
                             <button class="play-button"><span class="fa fa-play"> Play</span></button>
                         </div>
@@ -62,10 +68,49 @@
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="slider-wrapper">
+                <h2 class="slider-header">Keep Watching</h2>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/moonlight-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/parasite-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/midsommar-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/avengersendgame-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/spidermanfarfromhome-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/us-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/joker-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/maleficentmistressofevil-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                        <li class="glide__slide"><div class="preview"><img src="images/previewImages/captainmarvel-poster.jpg" style="width: 100%; height: 100%;"></div></li>
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span class="fa fa-angle-left"></span></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span class="fa fa-angle-right"></span></button>
+                      </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Javascript -->
         <script src="js/script.js"></script>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+        <script>
+            const config = {
+                type: 'slider',
+                perView: 4,
+                perTouch: 4,
+                bound: true,
+                rewind: false,
+                peek: 50
+            }
+            new Glide('.glide', config).mount()
+        </script>
     </body>
 </html>
