@@ -14,7 +14,28 @@ body {
 
 @mixin large-preview-tile($background-image) {
     background: url($background-image) no-repeat;
-    background-size: cover;
+    background-size: cover; //switch to contain on resize
+    width: 100%; height: 100%;
+    border-radius: 4px;
+
+    .fa-play-circle {
+        position: relative;
+        top: 41%; right: 0; bottom: 0; left: 9vw;
+        width: 10px; height: 10px;
+        font-size: 6vw;
+        color: rgba(255, 255, 255, 0.800);
+        z-index: 1;
+        opacity: 0;
+    }
+    .fa-play-circle:hover { //May need JS to reveal on hover of entire preview, not just play-circle
+        opacity: 1;
+        transition: opacity 0.2s;
+    }
+}
+
+@mixin medium-preview-tile($background-image) {
+    background: url($background-image) no-repeat;
+    background-size: contain;
     width: 100%; height: 100%;
     border-radius: 4px;
 
@@ -133,7 +154,7 @@ body {
 
         .search-box {
             float: left;
-            //margin: 0px 30px 0 0;
+            margin: 0px 30px 0 0;
 
             .fa-search {
                 font-size: 2.4vw;
@@ -240,18 +261,17 @@ body {
         }
     }
 
-    .slider-wrapper {
-        width: 100%; height: 34vw; //height: 54vh;
-        position: relative; bottom: 10vw;
-        margin: 0 0 100px 0; padding: 0 40px 0 40px;
-        
-        //left: 3vw;
+    .slider-header {
+        color: $secondaryColor;
+        font-size: 2.5vw; //
+        position: relative; top: 20px;
+    }
 
-        .slider-header {
-            color: $secondaryColor;
-            font-size: 2.5vw;
-            position: relative; top: 20px;
-        }
+    /* For large sliders */
+    .lg-slider-wrapper { 
+        width: 100%; height: 34vw;
+        position: relative; bottom: 10vw;
+        margin: 0 0 6% 0; padding: 0 40px 0 40px;
 
         .lg-preview-1 { @include large-preview-tile("../images/previewImages/moonlight-poster.jpg"); }
         .lg-preview-2 { @include large-preview-tile("../images/previewImages/parasite-poster.jpg"); }
@@ -262,31 +282,28 @@ body {
         .lg-preview-7 { @include large-preview-tile("../images/previewImages/joker-poster.jpg"); }
         .lg-preview-8 { @include large-preview-tile("../images/previewImages/maleficentmistressofevil-poster.jpg"); }
         .lg-preview-9 { @include large-preview-tile("../images/previewImages/captainmarvel-poster.jpg"); }
+    }
+
+    /* For medium sliders */
+    .med-slider-wrapper { 
+        width: 100%; height: 14vw;
+        position: relative; bottom: 10vw;
+        margin: 0 0 6% 0; padding: 0 40px 0 40px;
+
+        .med-preview-1 { @include medium-preview-tile("../images/previewImages/landscape/boruto-poster.jpg"); }
+        .med-preview-2 { @include medium-preview-tile("../images/previewImages/landscape/deathnote-poster.jpg"); }
+        .med-preview-3 { @include medium-preview-tile("../images/previewImages/landscape/attackontitan-poster.jpg"); }
+        .med-preview-4 { @include medium-preview-tile("../images/previewImages/landscape/demonslayer-poster.jpg"); }
+        .med-preview-5 { @include medium-preview-tile("../images/previewImages/landscape/narutoshippuden-poster.jpg"); }
+        .med-preview-6 { @include medium-preview-tile("../images/previewImages/landscape/onepunchman-poster.jpg"); }
+        .med-preview-7 { @include medium-preview-tile("../images/previewImages/landscape/yuyuhakusho-poster.jpg"); }
+        .med-preview-8 { @include medium-preview-tile("../images/previewImages/landscape/onepiece-poster.jpg"); }
+        .med-preview-9 { @include medium-preview-tile("../images/previewImages/landscape/hunterxhunter-poster.jpg"); }
+        .med-preview-10 { @include medium-preview-tile("../images/previewImages/landscape/myheroacademia-poster.jpg"); }
+        .med-preview-11 { @include medium-preview-tile("../images/previewImages/landscape/bleach-poster.jpg"); }
+        .med-preview-12 { @include medium-preview-tile("../images/previewImages/landscape/fireforce-poster.jpg"); }
+        .med-preview-13 { @include medium-preview-tile("../images/previewImages/landscape/akira-poster.jpg"); }
         
-        /*.preview {
-            width: 100%; height: 100%;
-            //border: 1px solid white;
-            border-radius: 4px;
-
-            img {
-                width: 100%; height: 100%;
-            }
-
-            .fa-play-circle {
-                width: 10px; height: 10px;
-                font-size: 6vw;
-                color: rgba(255, 255, 255, 0.800);
-                position: absolute;
-                top: 41%; right: 0; bottom: 0; left: 9vw;
-                z-index: 1;
-                opacity: 0;
-                border: 1px solid red; 
-            }
-            .fa-play-circle:hover {
-                opacity: 1;
-                transition: opacity 0.2s;
-            }
-        }*/
     }
 }
 

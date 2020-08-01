@@ -123,6 +123,7 @@ body {
 
 .main-header .secondary-nav .search-box {
   float: left;
+  margin: 0px 30px 0 0;
 }
 
 .main-header .secondary-nav .search-box .fa-search {
@@ -150,6 +151,11 @@ body {
   color: #191919;
   position: relative;
   top: 6px;
+}
+
+.main-container {
+  /* For large sliders */
+  /* For medium sliders */
 }
 
 .main-container .billboard-pane .title-image {
@@ -233,47 +239,23 @@ body {
   padding: 4px 0 0 0;
 }
 
-.main-container .slider-wrapper {
-  width: 100%;
-  height: 34vw;
-  position: relative;
-  bottom: 10vw;
-  margin: 0 0 100px 0;
-  padding: 0 40px 0 40px;
-  /*.preview {
-            width: 100%; height: 100%;
-            //border: 1px solid white;
-            border-radius: 4px;
-
-            img {
-                width: 100%; height: 100%;
-            }
-
-            .fa-play-circle {
-                width: 10px; height: 10px;
-                font-size: 6vw;
-                color: rgba(255, 255, 255, 0.800);
-                position: absolute;
-                top: 41%; right: 0; bottom: 0; left: 9vw;
-                z-index: 1;
-                opacity: 0;
-                border: 1px solid red; 
-            }
-            .fa-play-circle:hover {
-                opacity: 1;
-                transition: opacity 0.2s;
-            }
-        }*/
-}
-
-.main-container .slider-wrapper .slider-header {
+.main-container .slider-header {
   color: white;
   font-size: 2.5vw;
   position: relative;
   top: 20px;
 }
 
-.main-container .slider-wrapper .lg-preview-1 {
+.main-container .lg-slider-wrapper {
+  width: 100%;
+  height: 34vw;
+  position: relative;
+  bottom: 10vw;
+  margin: 0 0 6% 0;
+  padding: 0 40px 0 40px;
+}
+
+.main-container .lg-slider-wrapper .lg-preview-1 {
   background: url("../images/previewImages/moonlight-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -281,7 +263,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-1 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-1 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -295,13 +277,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-1 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-1 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-2 {
+.main-container .lg-slider-wrapper .lg-preview-2 {
   background: url("../images/previewImages/parasite-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -309,7 +291,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-2 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-2 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -323,13 +305,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-2 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-2 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-3 {
+.main-container .lg-slider-wrapper .lg-preview-3 {
   background: url("../images/previewImages/midsommar-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -337,7 +319,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-3 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-3 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -351,13 +333,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-3 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-3 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-4 {
+.main-container .lg-slider-wrapper .lg-preview-4 {
   background: url("../images/previewImages/avengersendgame-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -365,7 +347,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-4 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-4 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -379,13 +361,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-4 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-4 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-5 {
+.main-container .lg-slider-wrapper .lg-preview-5 {
   background: url("../images/previewImages/spidermanfarfromhome-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -393,7 +375,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-5 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-5 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -407,13 +389,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-5 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-5 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-6 {
+.main-container .lg-slider-wrapper .lg-preview-6 {
   background: url("../images/previewImages/us-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -421,7 +403,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-6 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-6 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -435,13 +417,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-6 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-6 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-7 {
+.main-container .lg-slider-wrapper .lg-preview-7 {
   background: url("../images/previewImages/joker-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -449,7 +431,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-7 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-7 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -463,13 +445,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-7 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-7 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-8 {
+.main-container .lg-slider-wrapper .lg-preview-8 {
   background: url("../images/previewImages/maleficentmistressofevil-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -477,7 +459,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-8 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-8 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -491,13 +473,13 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-8 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-8 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.main-container .slider-wrapper .lg-preview-9 {
+.main-container .lg-slider-wrapper .lg-preview-9 {
   background: url("../images/previewImages/captainmarvel-poster.jpg") no-repeat;
   background-size: cover;
   width: 100%;
@@ -505,7 +487,7 @@ body {
   border-radius: 4px;
 }
 
-.main-container .slider-wrapper .lg-preview-9 .fa-play-circle {
+.main-container .lg-slider-wrapper .lg-preview-9 .fa-play-circle {
   position: relative;
   top: 41%;
   right: 0;
@@ -519,7 +501,380 @@ body {
   opacity: 0;
 }
 
-.main-container .slider-wrapper .lg-preview-9 .fa-play-circle:hover {
+.main-container .lg-slider-wrapper .lg-preview-9 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper {
+  width: 100%;
+  height: 14vw;
+  position: relative;
+  bottom: 10vw;
+  margin: 0 0 6% 0;
+  padding: 0 40px 0 40px;
+}
+
+.main-container .med-slider-wrapper .med-preview-1 {
+  background: url("../images/previewImages/landscape/boruto-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-1 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-1 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-2 {
+  background: url("../images/previewImages/landscape/deathnote-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-2 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-2 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-3 {
+  background: url("../images/previewImages/landscape/attackontitan-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-3 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-3 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-4 {
+  background: url("../images/previewImages/landscape/demonslayer-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-4 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-4 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-5 {
+  background: url("../images/previewImages/landscape/narutoshippuden-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-5 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-5 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-6 {
+  background: url("../images/previewImages/landscape/onepunchman-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-6 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-6 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-7 {
+  background: url("../images/previewImages/landscape/yuyuhakusho-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-7 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-7 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-8 {
+  background: url("../images/previewImages/landscape/onepiece-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-8 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-8 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-9 {
+  background: url("../images/previewImages/landscape/hunterxhunter-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-9 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-9 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-10 {
+  background: url("../images/previewImages/landscape/myheroacademia-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-10 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-10 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-11 {
+  background: url("../images/previewImages/landscape/bleach-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-11 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-11 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-12 {
+  background: url("../images/previewImages/landscape/fireforce-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-12 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-12 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .med-slider-wrapper .med-preview-13 {
+  background: url("../images/previewImages/landscape/akira-poster.jpg") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.main-container .med-slider-wrapper .med-preview-13 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .med-slider-wrapper .med-preview-13 .fa-play-circle:hover {
   opacity: 1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
