@@ -153,11 +153,6 @@ body {
   top: 6px;
 }
 
-.main-container .billboard-pane {
-  width: 100%;
-  height: 100%;
-}
-
 .main-container .billboard-pane .title-image {
   width: 100%;
   height: auto;
@@ -241,20 +236,284 @@ body {
 
 .main-container .slider-wrapper {
   width: 100%;
-  height: 68%;
+  height: 34vw;
   position: relative;
-  bottom: 60px;
+  padding: 0 40px 0 40px;
+  bottom: 10vw;
+  /*.preview {
+            width: 100%; height: 100%;
+            //border: 1px solid white;
+            border-radius: 4px;
+
+            img {
+                width: 100%; height: 100%;
+            }
+
+            .fa-play-circle {
+                width: 10px; height: 10px;
+                font-size: 6vw;
+                color: rgba(255, 255, 255, 0.800);
+                position: absolute;
+                top: 41%; right: 0; bottom: 0; left: 9vw;
+                z-index: 1;
+                opacity: 0;
+                border: 1px solid red; 
+            }
+            .fa-play-circle:hover {
+                opacity: 1;
+                transition: opacity 0.2s;
+            }
+        }*/
 }
 
 .main-container .slider-wrapper .slider-header {
   color: white;
-  margin: 0 0 0 50px;
+  font-size: 2.5vw;
+  position: relative;
+  top: 20px;
 }
 
-.main-container .slider-wrapper .preview {
+.main-container .slider-wrapper .preview-1 {
+  background: url("../images/previewImages/moonlight-poster.jpg") no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
-  border-radius: 4px;
+}
+
+.main-container .slider-wrapper .preview-1 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-1 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-2 {
+  background: url("../images/previewImages/parasite-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-2 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-2 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-3 {
+  background: url("../images/previewImages/midsommar-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-3 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-3 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-4 {
+  background: url("../images/previewImages/avengersendgame-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-4 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-4 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-5 {
+  background: url("../images/previewImages/spidermanfarfromhome-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-5 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-5 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-6 {
+  background: url("../images/previewImages/us-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-6 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-6 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-7 {
+  background: url("../images/previewImages/joker-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-7 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-7 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-8 {
+  background: url("../images/previewImages/maleficentmistressofevil-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-8 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-8 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.main-container .slider-wrapper .preview-9 {
+  background: url("../images/previewImages/captainmarvel-poster.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container .slider-wrapper .preview-9 .fa-play-circle {
+  position: relative;
+  top: 41%;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+  width: 10px;
+  height: 10px;
+  font-size: 6vw;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  opacity: 0;
+}
+
+.main-container .slider-wrapper .preview-9 .fa-play-circle:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -298,6 +557,9 @@ body {
   }
   .add-item {
     padding: 7px 0 0 0 !important;
+  }
+  .slider-header {
+    font-size: 22px !important;
   }
 }
 

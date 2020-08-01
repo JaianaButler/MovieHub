@@ -4,7 +4,7 @@
     position: absolute;
     display: block;
     top: 50%;
-    z-index: 2;
+    z-index: 2; /* WATCH */
     color: white;
     text-transform: uppercase;
     padding: 9px 12px;
@@ -26,10 +26,10 @@
     border-color: white;
 }
 .glide__arrow--left{
-    left: 2em;
+    left: -1.6em; /*left: 2em;*/
 }
 .glide__arrow--right{
-    right: 2em;
+    right: -1.6em; /*right: 2em;*/
 }
 .glide__arrow--disabled{
     opacity: 0.33;
