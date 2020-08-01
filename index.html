@@ -75,59 +75,99 @@
                     <div class="glide__track" data-glide-el="track">
                       <ul class="glide__slides">
                         <li class="glide__slide">
-                            <div class="preview-1">
+                            <div class="lg-preview-1">
                                 <!--<img src="images/previewImages/moonlight-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="preview-2">
+                            <div class="lg-preview-2">
                                 <!--<img src="images/previewImages/parasite-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="preview-3">
+                            <div class="lg-preview-3">
                                 <!--<img src="images/previewImages/midsommar-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="preview-4">
+                            <div class="lg-preview-4">
                                 <!--<img src="images/previewImages/avengersendgame-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="preview-5">
+                            <div class="lg-preview-5">
                                 <!--<img src="images/previewImages/spidermanfarfromhome-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="preview-6">
+                            <div class="lg-preview-6">
                                 <!--<img src="images/previewImages/us-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="preview-7">
+                            <div class="lg-preview-7">
                                 <!--<img src="images/previewImages/joker-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                           <div class="preview-8">
+                           <div class="lg-preview-8">
                                 <!--<img src="images/previewImages/maleficentmistressofevil-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
                         <li class="glide__slide">
-                            <div class="preview-9">
+                            <div class="lg-preview-9">
                                 <!--<img src="images/previewImages/captainmarvel-poster.jpg">-->
                                 <span class="fa fa-play-circle"></span>
                             </div>
                         </li>
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span class="fa fa-angle-left"></span></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><span class="fa fa-angle-right"></span></button>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="slider-wrapper">
+                <h2 class="slider-header">Resume Watching</h2>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="lg-preview-1"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="lg-preview-2"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="lg-preview-3"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="lg-preview-4"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="lg-preview-5"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="lg-preview-6"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="lg-preview-7"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide">
+                           <div class="lg-preview-8"><span class="fa fa-play-circle"></span></div>
+                        </li>
+                        <li class="glide__slide"><div class="lg-preview-9"><span class="fa fa-play-circle"></span></div></li>
                       </ul>
                     </div>
                     <div class="glide__arrows" data-glide-el="controls">
@@ -147,7 +187,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
         <script>
-            const config = {
+            /*const config = {
                 type: 'slider',
                 perView: 4,
                 perTouch: 4,
@@ -155,7 +195,20 @@
                 rewind: false,
                 //peek: 50
             }
-            new Glide('.glide', config).mount()
+            new Glide('.glide', config).mount()*/
+
+            const sliders = document.querySelectorAll('.glide')
+            const conf = {
+                type: 'slider',
+                perView: 4,
+                perTouch: 4,
+                bound: true,
+                rewind: false
+            }
+            sliders.forEach(item => {
+                new Glide(item, conf).mount()
+            })
+
         </script>
     </body>
 </html>

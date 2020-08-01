@@ -16,6 +16,7 @@ body {
     background: url($background-image) no-repeat;
     background-size: cover;
     width: 100%; height: 100%;
+    border-radius: 4px;
 
     .fa-play-circle {
         position: relative;
@@ -132,7 +133,7 @@ body {
 
         .search-box {
             float: left;
-            margin: 0px 20px 0 0;
+            //margin: 0px 30px 0 0;
 
             .fa-search {
                 font-size: 2.4vw;
@@ -241,8 +242,9 @@ body {
 
     .slider-wrapper {
         width: 100%; height: 34vw; //height: 54vh;
-        position: relative; padding: 0 40px 0 40px;
-        bottom: 10vw;
+        position: relative; bottom: 10vw;
+        margin: 0 0 100px 0; padding: 0 40px 0 40px;
+        
         //left: 3vw;
 
         .slider-header {
@@ -250,16 +252,16 @@ body {
             font-size: 2.5vw;
             position: relative; top: 20px;
         }
-        
-        .preview-1 { @include large-preview-tile("../images/previewImages/moonlight-poster.jpg"); } //top: 41%; right: 0; bottom: 0; left: 9vw;
-        .preview-2 { @include large-preview-tile("../images/previewImages/parasite-poster.jpg"); }
-        .preview-3 { @include large-preview-tile("../images/previewImages/midsommar-poster.jpg"); }
-        .preview-4 { @include large-preview-tile("../images/previewImages/avengersendgame-poster.jpg"); }
-        .preview-5 { @include large-preview-tile("../images/previewImages/spidermanfarfromhome-poster.jpg"); }
-        .preview-6 { @include large-preview-tile("../images/previewImages/us-poster.jpg"); }
-        .preview-7 { @include large-preview-tile("../images/previewImages/joker-poster.jpg"); }
-        .preview-8 { @include large-preview-tile("../images/previewImages/maleficentmistressofevil-poster.jpg"); }
-        .preview-9 { @include large-preview-tile("../images/previewImages/captainmarvel-poster.jpg"); }
+
+        .lg-preview-1 { @include large-preview-tile("../images/previewImages/moonlight-poster.jpg"); }
+        .lg-preview-2 { @include large-preview-tile("../images/previewImages/parasite-poster.jpg"); }
+        .lg-preview-3 { @include large-preview-tile("../images/previewImages/midsommar-poster.jpg"); }
+        .lg-preview-4 { @include large-preview-tile("../images/previewImages/avengersendgame-poster.jpg"); }
+        .lg-preview-5 { @include large-preview-tile("../images/previewImages/spidermanfarfromhome-poster.jpg"); }
+        .lg-preview-6 { @include large-preview-tile("../images/previewImages/us-poster.jpg"); }
+        .lg-preview-7 { @include large-preview-tile("../images/previewImages/joker-poster.jpg"); }
+        .lg-preview-8 { @include large-preview-tile("../images/previewImages/maleficentmistressofevil-poster.jpg"); }
+        .lg-preview-9 { @include large-preview-tile("../images/previewImages/captainmarvel-poster.jpg"); }
         
         /*.preview {
             width: 100%; height: 100%;
