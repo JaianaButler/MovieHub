@@ -284,24 +284,31 @@ body {
   color: white;
   font-size: 2.5vw;
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 
-.main-container .wrapper {
+.main-container .slider-wrapper {
   width: 100%;
   position: relative;
   bottom: 10vw;
   margin: 0 0 6% 0;
-  padding: 0 40px 0 40px;
+  padding: 0 2vw 0 2vw;
 }
 
-.main-container .wrapper img {
+.main-container .slider-wrapper img {
   width: 100%;
   border-radius: 4px;
 }
 
 .main-container .lg-slider-wrapper {
   height: 34vw;
+}
+
+.main-container .lg-slider-wrapper .lg-preview .fa-play-circle {
+  top: 14vw;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
 }
 
 .main-container .lg-slider-wrapper .lg-preview img {
@@ -325,21 +332,23 @@ body {
         .med-preview-13 { @include medium-preview-tile("../images/previewImages/landscape/akira-poster.jpg"); }*/
 }
 
+.main-container .med-slider-wrapper .med-preview .fa-play-circle {
+  top: 4vw;
+  right: 0;
+  bottom: 0;
+  left: 9vw;
+}
+
 .main-container .med-slider-wrapper .med-preview img {
   height: 95%;
 }
 
 .main-container .fa-play-circle {
   position: relative;
-  top: 41%;
-  right: 0;
-  bottom: 0;
-  left: 9vw;
-  width: 10px;
-  height: 10px;
+  width: 1vw;
+  height: 1vh;
   font-size: 6vw;
-  color: rgba(255, 255, 255, 0.8);
-  z-index: 1;
+  color: rgba(255, 255, 255, 0.9);
   opacity: 0;
 }
 

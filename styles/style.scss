@@ -264,13 +264,18 @@ body {
     .slider-header {
         color: $secondaryColor;
         font-size: 2.5vw; //
-        position: relative; top: 20px;
+        position: relative; top: 30px;
     }
 
-    .wrapper {
+    .slider-wrapper {
         width: 100%;
         position: relative; bottom: 10vw;
-        margin: 0 0 6% 0; padding: 0 40px 0 40px;
+        margin: 0 0 6% 0; padding: 0 2vw 0 2vw;
+        //padding: 0 40px 0 40px; //
+
+        .preview {
+
+        }
 
         img {
             width: 100%;
@@ -284,7 +289,10 @@ body {
 
         .lg-preview {
 
+            .fa-play-circle { top: 14vw; right: 0; bottom: 0; left: 9vw; } //
+
             img { height: 98%; }
+
         }
     }
 
@@ -293,6 +301,8 @@ body {
         height: 14vw;
 
         .med-preview {
+
+            .fa-play-circle { top: 4vw; right: 0; bottom: 0; left: 9vw; }
 
             img { height: 95%; }
         }
@@ -314,13 +324,14 @@ body {
 
     .fa-play-circle {
         position: relative;
-        top: 41%; right: 0; bottom: 0; left: 9vw;
-        width: 10px; height: 10px;
+        //top: 0; right: 0; bottom: 0; left: 9vw;
+        width: 1vw; height: 1vh;
         font-size: 6vw;
-        color: rgba(255, 255, 255, 0.800);
-        z-index: 1;
+        color: rgba(255, 255, 255, 0.9);
+        //z-index: 1;
         opacity: 0;
     }
+
     .fa-play-circle:hover { //May need JS to reveal on hover of entire preview, not just play-circle
         opacity: 1;
         transition: opacity 0.2s;
