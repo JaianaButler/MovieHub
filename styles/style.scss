@@ -12,7 +12,7 @@ body {
     margin: 0 0 0 0;
 }
 
-@mixin large-preview-tile($background-image) {
+/*@mixin large-preview-tile($background-image) {
     background: url($background-image) no-repeat;
     background-size: cover; //switch to contain on resize
     width: 100%; height: 100%;
@@ -52,13 +52,13 @@ body {
         opacity: 1;
         transition: opacity 0.2s;
     }
-}
+}*/
 
 .main-header {
     width: 100%; height: auto;
     max-height: 6%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background: transparent;
     padding: 1.8% 4% 0 4%;
     transition: background .4s;
@@ -111,7 +111,7 @@ body {
                 min-width: 200px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 text-align: center;
-                z-index: 2;
+                z-index: 3;
 
                 .sub-menu-list {
                     list-style-type: none;
@@ -267,30 +267,37 @@ body {
         position: relative; top: 20px;
     }
 
-    /* For large sliders */
-    .lg-slider-wrapper { 
-        width: 100%; height: 34vw;
+    .wrapper {
+        width: 100%;
         position: relative; bottom: 10vw;
         margin: 0 0 6% 0; padding: 0 40px 0 40px;
 
-        .lg-preview-1 { @include large-preview-tile("../images/previewImages/moonlight-poster.jpg"); }
-        .lg-preview-2 { @include large-preview-tile("../images/previewImages/parasite-poster.jpg"); }
-        .lg-preview-3 { @include large-preview-tile("../images/previewImages/midsommar-poster.jpg"); }
-        .lg-preview-4 { @include large-preview-tile("../images/previewImages/avengersendgame-poster.jpg"); }
-        .lg-preview-5 { @include large-preview-tile("../images/previewImages/spidermanfarfromhome-poster.jpg"); }
-        .lg-preview-6 { @include large-preview-tile("../images/previewImages/us-poster.jpg"); }
-        .lg-preview-7 { @include large-preview-tile("../images/previewImages/joker-poster.jpg"); }
-        .lg-preview-8 { @include large-preview-tile("../images/previewImages/maleficentmistressofevil-poster.jpg"); }
-        .lg-preview-9 { @include large-preview-tile("../images/previewImages/captainmarvel-poster.jpg"); }
+        img {
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    /* For large sliders */
+    .lg-slider-wrapper { 
+        height: 34vw;
+
+        .lg-preview {
+
+            img { height: 98%; }
+        }
     }
 
     /* For medium sliders */
     .med-slider-wrapper { 
-        width: 100%; height: 14vw;
-        position: relative; bottom: 10vw;
-        margin: 0 0 6% 0; padding: 0 40px 0 40px;
+        height: 14vw;
 
-        .med-preview-1 { @include medium-preview-tile("../images/previewImages/landscape/boruto-poster.jpg"); }
+        .med-preview {
+
+            img { height: 95%; }
+        }
+
+        /*.med-preview-1 { @include medium-preview-tile("../images/previewImages/landscape/boruto-poster.jpg"); }
         .med-preview-2 { @include medium-preview-tile("../images/previewImages/landscape/deathnote-poster.jpg"); }
         .med-preview-3 { @include medium-preview-tile("../images/previewImages/landscape/attackontitan-poster.jpg"); }
         .med-preview-4 { @include medium-preview-tile("../images/previewImages/landscape/demonslayer-poster.jpg"); }
@@ -302,8 +309,21 @@ body {
         .med-preview-10 { @include medium-preview-tile("../images/previewImages/landscape/myheroacademia-poster.jpg"); }
         .med-preview-11 { @include medium-preview-tile("../images/previewImages/landscape/bleach-poster.jpg"); }
         .med-preview-12 { @include medium-preview-tile("../images/previewImages/landscape/fireforce-poster.jpg"); }
-        .med-preview-13 { @include medium-preview-tile("../images/previewImages/landscape/akira-poster.jpg"); }
-        
+        .med-preview-13 { @include medium-preview-tile("../images/previewImages/landscape/akira-poster.jpg"); }*/
+    }
+
+    .fa-play-circle {
+        position: relative;
+        top: 41%; right: 0; bottom: 0; left: 9vw;
+        width: 10px; height: 10px;
+        font-size: 6vw;
+        color: rgba(255, 255, 255, 0.800);
+        z-index: 1;
+        opacity: 0;
+    }
+    .fa-play-circle:hover { //May need JS to reveal on hover of entire preview, not just play-circle
+        opacity: 1;
+        transition: opacity 0.2s;
     }
 }
 
