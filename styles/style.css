@@ -9,47 +9,6 @@ body {
   margin: 0 0 0 0;
 }
 
-/*@mixin large-preview-tile($background-image) {
-    background: url($background-image) no-repeat;
-    background-size: cover; //switch to contain on resize
-    width: 100%; height: 100%;
-    border-radius: 4px;
-
-    .fa-play-circle {
-        position: relative;
-        top: 41%; right: 0; bottom: 0; left: 9vw;
-        width: 10px; height: 10px;
-        font-size: 6vw;
-        color: rgba(255, 255, 255, 0.800);
-        z-index: 1;
-        opacity: 0;
-    }
-    .fa-play-circle:hover { //May need JS to reveal on hover of entire preview, not just play-circle
-        opacity: 1;
-        transition: opacity 0.2s;
-    }
-}
-
-@mixin medium-preview-tile($background-image) {
-    background: url($background-image) no-repeat;
-    background-size: contain;
-    width: 100%; height: 100%;
-    border-radius: 4px;
-
-    .fa-play-circle {
-        position: relative;
-        top: 41%; right: 0; bottom: 0; left: 9vw;
-        width: 10px; height: 10px;
-        font-size: 6vw;
-        color: rgba(255, 255, 255, 0.800);
-        z-index: 1;
-        opacity: 0;
-    }
-    .fa-play-circle:hover { //May need JS to reveal on hover of entire preview, not just play-circle
-        opacity: 1;
-        transition: opacity 0.2s;
-    }
-}*/
 .main-header {
   width: 100%;
   height: auto;
@@ -282,17 +241,17 @@ body {
 
 .main-container .slider-header {
   color: white;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   position: relative;
-  top: 30px;
+  top: 4vh;
 }
 
 .main-container .slider-wrapper {
   width: 100%;
   position: relative;
-  bottom: 10vw;
-  margin: 0 0 6% 0;
-  padding: 0 2vw 0 2vw;
+  bottom: 14vw;
+  margin: 0 0 2% 0;
+  padding: 0 4vw 0 4vw;
 }
 
 .main-container .slider-wrapper img {
@@ -350,6 +309,7 @@ body {
   font-size: 6vw;
   color: rgba(255, 255, 255, 0.9);
   opacity: 0;
+  text-align: center;
 }
 
 .main-container .fa-play-circle:hover {
@@ -401,7 +361,10 @@ body {
     padding: 7px 0 0 0 !important;
   }
   .slider-header {
-    font-size: 22px !important;
+    font-size: 1.4vw !important;
+  }
+  .slider-wrapper {
+    margin: 0 0 4% 0 !important;
   }
 }
 
