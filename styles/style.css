@@ -373,5 +373,8 @@ body {
 /* fix:
     fa-angle sizing
     fa-play-cirle hovering
+    arrows should disappear at ends of row
+    perView = 3 for sm and med screens
+    make rows take up more vertical space for sm and med screens
 */
 /*# sourceMappingURL=style.css.map */
