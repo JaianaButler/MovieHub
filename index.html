@@ -40,7 +40,7 @@
             </ul>
             <div class="secondary-nav">
                 <div class="search-box">
-                    <span class="fa fa-search"> Search</span>
+                    <span class="fa fa-search">&ensp;Search</span>
                 </div>
 
                 <div class="profile-icon">
@@ -60,10 +60,10 @@
                     </div>
                     <div class="control-buttons">
                         <div class="control-item play-item">
-                            <button class="play-button"><span class="fa fa-play"> Play</span></button>
+                            <button class="play-button"><span class="fa fa-play">&ensp;Play</span></button>
                         </div>
                         <div class="control-item add-item">
-                            <button class="add-button"><span class="fa fa-plus-circle"> Add to My Hub</span></button>
+                            <button class="add-button"><span class="fa fa-plus-circle">&ensp;Add To My Hub</span></button>
                         </div>
                     </div>
                 </div>
@@ -308,7 +308,7 @@
 
             <!-- Sci-Fi -->
             <div class="slider-wrapper med-slider-wrapper">
-                <h2 class="slider-header">Sci-Fi</h2>
+                <h2 class="slider-header">Sci-Fi & Fantasy</h2>
                 <div class="glide med-glide">
                     <div class="glide__track" data-glide-el="track">
                       <ul class="glide__slides">
@@ -708,34 +708,49 @@
                 type: 'slider',
                 perView: 4,
                 perTouch: 4,
+                breakpoints: {
+                    868: {
+                        perView: 3
+                    }
+                },
                 bound: true,
                 rewind: false,
                 //peek: 50
             }
             new Glide('.glide', config).mount()*/
 
-            const lgsliders = document.querySelectorAll('.lg-glide')
+            /*const lgsliders = document.querySelectorAll('.lg-glide')
             const lgconfig = {
                 type: 'slider',
                 perView: 4,
                 perTouch: 4,
+                breakpoints: {
+                    868: {
+                        perView: 3
+                    }
+                },
                 bound: true,
                 rewind: false
             }
             lgsliders.forEach(item => {
                 new Glide(item, lgconfig).mount()
-            })
+            })*/
 
-            const medsliders = document.querySelectorAll('.med-glide')
-            const medconfig = {
+            const sliders = document.querySelectorAll('.glide')
+            const config = {
                 type: 'slider',
                 perView: 4,
                 perTouch: 4,
+                breakpoints: {
+                    868: {
+                        perView: 3
+                    }
+                },
                 bound: true,
                 rewind: false
             }
-            medsliders.forEach(item => {
-                new Glide(item, medconfig).mount()
+            sliders.forEach(item => {
+                new Glide(item, config).mount()
             })
 
         </script>

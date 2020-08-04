@@ -241,7 +241,7 @@ body {
 
 .main-container .slider-header {
   color: white;
-  font-size: 1.5vw;
+  font-size: 2vw;
   position: relative;
   top: 4vh;
 }
@@ -250,7 +250,7 @@ body {
   width: 100%;
   position: relative;
   bottom: 14vw;
-  margin: 0 0 2% 0;
+  margin: 0 0 4% 0;
   padding: 0 4vw 0 4vw;
 }
 
@@ -260,7 +260,7 @@ body {
 }
 
 .main-container .lg-slider-wrapper {
-  height: 34vw;
+  height: 40vw;
 }
 
 .main-container .lg-slider-wrapper .lg-preview .fa-play-circle {
@@ -275,20 +275,7 @@ body {
 }
 
 .main-container .med-slider-wrapper {
-  height: 14vw;
-  /*.med-preview-1 { @include medium-preview-tile("../images/previewImages/landscape/boruto-poster.jpg"); }
-        .med-preview-2 { @include medium-preview-tile("../images/previewImages/landscape/deathnote-poster.jpg"); }
-        .med-preview-3 { @include medium-preview-tile("../images/previewImages/landscape/attackontitan-poster.jpg"); }
-        .med-preview-4 { @include medium-preview-tile("../images/previewImages/landscape/demonslayer-poster.jpg"); }
-        .med-preview-5 { @include medium-preview-tile("../images/previewImages/landscape/narutoshippuden-poster.jpg"); }
-        .med-preview-6 { @include medium-preview-tile("../images/previewImages/landscape/onepunchman-poster.jpg"); }
-        .med-preview-7 { @include medium-preview-tile("../images/previewImages/landscape/yuyuhakusho-poster.jpg"); }
-        .med-preview-8 { @include medium-preview-tile("../images/previewImages/landscape/onepiece-poster.jpg"); }
-        .med-preview-9 { @include medium-preview-tile("../images/previewImages/landscape/hunterxhunter-poster.jpg"); }
-        .med-preview-10 { @include medium-preview-tile("../images/previewImages/landscape/myheroacademia-poster.jpg"); }
-        .med-preview-11 { @include medium-preview-tile("../images/previewImages/landscape/bleach-poster.jpg"); }
-        .med-preview-12 { @include medium-preview-tile("../images/previewImages/landscape/fireforce-poster.jpg"); }
-        .med-preview-13 { @include medium-preview-tile("../images/previewImages/landscape/akira-poster.jpg"); }*/
+  height: 20vw;
 }
 
 .main-container .med-slider-wrapper .med-preview .fa-play-circle {
@@ -366,6 +353,12 @@ body {
   .slider-wrapper {
     margin: 0 0 4% 0 !important;
   }
+  .lg-slider-wrapper {
+    height: 32vw !important;
+  }
+  .med-slider-wrapper {
+    height: 14vw !important;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -373,8 +366,6 @@ body {
 /* fix:
     fa-angle sizing
     fa-play-cirle hovering
-    arrows should disappear at ends of row
-    perView = 3 for sm and med screens
-    make rows take up more vertical space for sm and med screens
+    make arrows disappear at ends of row
 */
 /*# sourceMappingURL=style.css.map */
