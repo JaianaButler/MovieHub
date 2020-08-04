@@ -277,11 +277,9 @@ body {
 
     .fa-play-circle {
         position: relative;
-        //top: 0; right: 0; bottom: 0; left: 9vw;
         width: 1vw; height: 1vh;
         font-size: 6vw;
         color: rgba(255, 255, 255, 0.9);
-        //z-index: 1;
         opacity: 0;
         text-align: center;
     }
@@ -290,6 +288,9 @@ body {
         opacity: 1;
         transition: opacity 0.2s;
     }
+
+    .fa-angle-left {}
+    .fa-angle-right {}
 }
 
 
@@ -345,3 +346,9 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
+
+/* fix:
+    fa-angle sizing
+    fa-play-cirle hovering
+*/
