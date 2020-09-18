@@ -6,7 +6,8 @@ $hoverColor: rgb(200, 200, 200);
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    overflow-x: hidden;
     background: $primaryColor;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
     margin: 0 0 0 0;
@@ -232,7 +233,7 @@ body {
 
     .slider-wrapper {
         width: 100%;
-        position: relative; top: 2vw; //bottom: 14vw;
+        position: relative; top: 2vw; left: 2vw;//bottom: 14vw;
         margin: 10% 0 0 0; padding: 0 4vw 0 4vw;
         z-index: 2;
 
@@ -257,7 +258,7 @@ body {
 
     /* For medium sliders */
     .med-slider-wrapper { 
-        height: 20vw; //14vw;
+        height: 26vw; //14vw
 
         .med-preview {
 
