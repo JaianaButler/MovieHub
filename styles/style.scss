@@ -6,8 +6,9 @@ $hoverColor: rgb(200, 200, 200);
     box-sizing: border-box;
 }
 
-html, body {
+body {
     overflow-x: hidden;
+    overflow-y: scroll;
     background: $primaryColor;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
     margin: 0 0 0 0;
@@ -227,14 +228,14 @@ html, body {
 
     .slider-header {
         color: $secondaryColor;
-        font-size: 3.5vw;
+        font-size: 3.4vw;
         //position: relative; top: 4vh;
     }
 
     .slider-wrapper {
         width: 100%;
-        position: relative; top: 2vw; left: 2vw;//bottom: 14vw;
-        margin: 10% 0 0 0; padding: 0 4vw 0 4vw;
+        position: relative; top: 2vw; //left: 3.6vw;//bottom: 14vw;
+        margin: 8% 0 0 0; padding: 0 0vw 0 4vw;
         z-index: 2;
 
         img {
@@ -245,13 +246,20 @@ html, body {
 
     /* For large sliders */
     .lg-slider-wrapper { 
-        height: 40vw;//34vw;
+        height: 54vw; //34vw;
 
         .lg-preview {
 
-            .fa-play-circle { top: 17vw; right: 0; bottom: 0; left: 12vw; } //
+            .fa-play-circle { 
+                top: 17vw; 
+                right: 0; 
+                bottom: 0; 
+                left: 12vw; 
+            } //
 
-            img { height: 98%; }
+            img { 
+                height: 98%; 
+            }
 
         }
     }
@@ -262,9 +270,15 @@ html, body {
 
         .med-preview {
 
-            .fa-play-circle { top: 7vw; right: 0; bottom: 0; left: 12vw; }
+            .fa-play-circle { 
+                top: 7vw; 
+                right: 0; 
+                bottom: 0; 
+                left: 12vw; }
 
-            img { height: 95%; }
+            img { 
+                height: 95%; 
+            }
         }
     }
 
@@ -305,25 +319,37 @@ html, body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .fa-search { font-size: 2vw !important; }
+    .fa-search { 
+        font-size: 2vw !important; 
+    }
 
-    .nav-menu { font-size: 2vw !important; }
+    .nav-menu { 
+        font-size: 2vw !important; 
+    }
 } 
 
 /* Medium devices (landscape tablets, 868px and up) */
 @media only screen and (min-width: 868px) {
-    .main-header { max-height: 10%; }
+    .main-header { 
+        max-height: 10%; 
+    }
 
-    .nav-menu { display: none !important; }
+    .nav-menu { 
+        display: none !important; 
+    }
 
     .nav-tab { 
         display: inline-block !important;
         font-size: 1.2vw !important;
     }
 
-    .search-box { margin: 0px 20px 3px 0 !important;}
+    .search-box { 
+        margin: 0px 20px 3px 0 !important;
+    }
 
-    .fa-search { font-size: 1.2vw !important; }
+    .fa-search { 
+        font-size: 1.2vw !important; 
+    }
 
     .profile-icon { 
         bottom: 24px !important;
@@ -344,7 +370,7 @@ html, body {
     }
 
     .slider-header {
-        font-size: 1.4vw !important;
+        font-size: 1.6vw !important;
     }
 
     .slider-wrapper {
@@ -352,13 +378,17 @@ html, body {
        top: -6vw !important;
        //bottom: 6vw !important;
        margin: 0 0 4% 0 !important; //
+       padding: 0 4vw 0 4vw !important;
     }
     .lg-slider-wrapper { 
         height: 32vw !important; //34vw;
 
         .lg-preview {
 
-            .fa-play-circle { top: 13vw !important; left: 8vw !important; }
+            .fa-play-circle { 
+                top: 13vw !important; 
+                left: 8vw !important; 
+            }
         }
     }
 
@@ -367,11 +397,16 @@ html, body {
 
         .med-preview {
 
-            .fa-play-circle { top: 4vw !important; left: 9vw !important; }
+            .fa-play-circle { 
+                top: 4vw !important; 
+                left: 9vw !important; 
+            }
         }
     }
 
-    .fa-play-circle { font-size: 6vw !important; }
+    .fa-play-circle { 
+        font-size: 6vw !important; 
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -396,11 +431,7 @@ Mobile Issues:
     View too small
         Font too small
         Too much shown in view
-    Slider headings
-    Remove arrows??
     Footer spacing
-    Increase slide sensitivity
-    Remove animated billboard??
     Nav spacing (Use side menu instead or onclick??; Only logo and search visible)
         Search drops when browse dropdown opens
         Can't put away browse (remove)
