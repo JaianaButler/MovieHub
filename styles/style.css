@@ -18,6 +18,7 @@ body {
   height: auto;
   max-height: 6%;
   position: fixed;
+  top: 0;
   z-index: 3;
   background: transparent;
   padding: 1.8% 4% 0 4%;
@@ -162,6 +163,10 @@ body {
   /* For medium sliders */
 }
 
+.main-container .billboard-pane {
+  display: none;
+}
+
 .main-container .billboard-pane .title-image {
   width: 100%;
   height: auto;
@@ -245,14 +250,14 @@ body {
 
 .main-container .slider-header {
   color: white;
-  font-size: 2vw;
+  font-size: 3.5vw;
 }
 
 .main-container .slider-wrapper {
   width: 100%;
   position: relative;
-  bottom: 14vw;
-  margin: 4% 0 0 0;
+  top: 2vw;
+  margin: 10% 0 0 0;
   padding: 0 4vw 0 4vw;
   z-index: 2;
 }
@@ -357,6 +362,9 @@ body {
     position: relative;
     top: 9px !important;
   }
+  .billboard-pane {
+    display: inline !important;
+  }
   .add-item {
     padding: 7px 0 0 0 !important;
   }
@@ -364,6 +372,8 @@ body {
     font-size: 1.4vw !important;
   }
   .slider-wrapper {
+    position: relative !important;
+    top: -6vw !important;
     margin: 0 0 4% 0 !important;
   }
   .lg-slider-wrapper {
@@ -393,7 +403,6 @@ Issues:
     Don't show left or right arrow at end of respective slider side
     fa-angle sizing
     fa-play-circle (possibly remove??)
-        Keep centered
         Show on hover of entire preview
     Profile icon??
         Remove or change shape??
@@ -405,7 +414,6 @@ Mobile Issues:
         Too much shown in view
     Slider headings
     Remove arrows??
-    Remove
     Footer spacing
     Increase slide sensitivity
     Remove animated billboard??

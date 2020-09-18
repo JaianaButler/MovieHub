@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/style.css">
@@ -743,10 +746,18 @@
             const config = {
                 type: 'slider',
                 perView: 4,
-                perTouch: 4,
+                touchRatio: 1,
+                swipeThreshold: 2,
+                dragThreshold: 2,
                 breakpoints: {
                     868: {
-                        perView: 3
+                        perView: 2,
+                        perTouch: 8,
+                        dragThreshold: 2,
+                        peek: { 
+                            before: 0, 
+                            after: 50
+                        },
                     }
                 },
                 bound: true,

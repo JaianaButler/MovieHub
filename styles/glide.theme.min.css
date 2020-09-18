@@ -18,6 +18,7 @@
     transition: opacity 150ms ease, border 300ms ease-in-out;
     transform: translateY(-50%);
     line-height: 1;
+    display: none;
 }
 .glide__arrow:focus{
     outline: none;
@@ -74,3 +75,10 @@
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .glide__arrow { 
+        display: inline;
+    }
+} 

@@ -18,7 +18,8 @@ body {
 .main-header {
     width: 100%; height: auto;
     max-height: 6%;
-    position: fixed;
+    position: fixed; 
+    top: 0;
     z-index: 3;
     background: transparent;
     padding: 1.8% 4% 0 4%;
@@ -126,7 +127,7 @@ body {
         .profile-icon {
             float: right;
             position: relative; bottom: 22px;
-            width: 30px; height: 30px;
+            width: 30px; height: 30px; //!!!!!!!!!!!!!
 
             .circle {
                 border-radius: 50%;
@@ -148,6 +149,7 @@ body {
 
     .billboard-pane {
         //width: 100%; height: 100%;
+        display: none;
 
         .title-image {
             width: 100%; height: auto;
@@ -224,14 +226,14 @@ body {
 
     .slider-header {
         color: $secondaryColor;
-        font-size: 2vw;
+        font-size: 3.5vw;
         //position: relative; top: 4vh;
     }
 
     .slider-wrapper {
         width: 100%;
-        position: relative; bottom: 14vw;
-        margin: 4% 0 0 0; padding: 0 4vw 0 4vw;
+        position: relative; top: 2vw; //bottom: 14vw;
+        margin: 10% 0 0 0; padding: 0 4vw 0 4vw;
         z-index: 2;
 
         img {
@@ -290,7 +292,7 @@ body {
         text-align: center;
         position: relative; bottom: 50px;
 
-        .footer-item{
+        .footer-item {
 
         }
     }
@@ -331,6 +333,11 @@ body {
             position: relative; top: 9px !important;
         }
     }
+    
+    .billboard-pane {
+        display: inline !important;
+    } 
+
     .add-item {
         padding: 7px 0 0 0 !important;
     }
@@ -340,10 +347,13 @@ body {
     }
 
     .slider-wrapper {
-        margin: 0 0 4% 0 !important; //
+       position: relative !important;
+       top: -6vw !important;
+       //bottom: 6vw !important;
+       margin: 0 0 4% 0 !important; //
     }
     .lg-slider-wrapper { 
-        height: 32vw !important;//34vw;
+        height: 32vw !important; //34vw;
 
         .lg-preview {
 
@@ -376,7 +386,6 @@ Issues:
     Don't show left or right arrow at end of respective slider side
     fa-angle sizing
     fa-play-circle (possibly remove??)
-        Keep centered
         Show on hover of entire preview
     Profile icon??
         Remove or change shape??
@@ -388,7 +397,6 @@ Mobile Issues:
         Too much shown in view
     Slider headings
     Remove arrows??
-    Remove
     Footer spacing
     Increase slide sensitivity
     Remove animated billboard??
