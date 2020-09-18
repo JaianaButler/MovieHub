@@ -250,12 +250,6 @@ body {
 
         .lg-preview {
 
-            .fa-play-circle { 
-                top: 17vw; 
-                right: 0; 
-                bottom: 0; 
-                left: 12vw; 
-            } //
 
             img { 
                 height: 98%; 
@@ -270,30 +264,10 @@ body {
 
         .med-preview {
 
-            .fa-play-circle { 
-                top: 7vw; 
-                right: 0; 
-                bottom: 0; 
-                left: 12vw; }
-
             img { 
                 height: 95%; 
             }
         }
-    }
-
-    .fa-play-circle {
-        position: relative;
-        width: 1vw; height: 1vh;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.9);
-        opacity: 0;
-        text-align: center;
-    }
-
-    .fa-play-circle:hover { //May need JS to reveal on hover of entire preview, not just play-circle
-        opacity: 1;
-        transition: opacity 0.2s;
     }
 
     .fa-angle-left {}
