@@ -126,7 +126,7 @@ body {
   width: 0;
   position: fixed;
   z-index: 3;
-  top: 8.5vw;
+  top: 9vw;
   left: 0;
   background: #191919;
   overflow-x: hidden;
@@ -425,7 +425,6 @@ Issues:
 Mobile Issues:
     Landscape orientation
     Footer spacing
-    Place hamburger left of logo
-    Gap between side menu top and nav
+    Gap between side menu top and nav on some landscape orientations
 */
 /*# sourceMappingURL=style.css.map */
