@@ -25,17 +25,28 @@ body {
     top: 0;
     z-index: 3;
     background: transparent;
-    padding: 1.8% 4% 0 4%;
+    padding: 3% 4% 3% 2%; //padding: 1.8% 4% 0 4%;
     transition: background .4s;
 
     &.scrolled { background: $primaryColor; }
 
+    .fa-bars {
+        color: $secondaryColor;
+        background: transparent;
+        border: none;
+        font-size: 24px; //font-size: 7vw;
+        position: relative;
+        //top: 4px;
+        margin: 0 4px 0 0;
+        float: left;
+    }
+
     .logo {
-        width: 7%; height: auto; 
+        width: 12%; height: auto; 
         min-width: 76px;
         float: left;
-        margin: 10px 20px 0 0; //margin: 2% 1% 1% 0;
-        position: relative; bottom: 4px;
+        //margin: 10px 0 0 0; //margin: 2% 1% 1% 0;
+        position: relative; //bottom: 4px;
     }
 
     .primary-nav {
@@ -43,16 +54,6 @@ body {
         min-height: 12px;
         list-style-type: none;
         overflow: hidden;
-
-        .fa-bars {
-            color: $secondaryColor;
-            background: transparent;
-            border: none;
-            font-size: 24px; //font-size: 7vw;
-            position: relative;
-            top: 4px;
-            margin: 0;
-        }
 
         a {
             color: $secondaryColor; 
@@ -81,8 +82,9 @@ body {
     .secondary-nav {
         float: right;
         color: $secondaryColor;
+        margin: 5px 0 0 0;
         position: relative;
-        bottom: 18px;
+        //bottom: 18px;
 
         .search-box {
             float: left;
@@ -234,7 +236,7 @@ body {
         position: relative; 
         top: 30px; 
         margin: 50px 0 0 0; 
-        padding: 0 0 0 20px;
+        padding: 0 0 0 18px;
         z-index: 2;
 
         img {
@@ -297,13 +299,18 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .main-header {
+        padding: 3% 4% 6% 2% !important;
+        //padding: 3% 4% 3% 2%;
+    }
+
     .fa-bars {
         font-size: 26px !important;
-        top: 5px !important;
+        bottom: 0.4vw !important;
     }
 
     .secondary-nav {
-        bottom: 3vw !important;
+        bottom: 1vw !important;
     }
 
     .fa-search { 
@@ -313,7 +320,8 @@ body {
     
     .logo {
         width: 11% !important;
-        margin: 8px 20px 0 0 !important;
+        bottom: 0.4vw !important;
+        //margin: 8px 20px 0 0 !important;
     }
 
     .slider-header { // !!!
@@ -324,9 +332,9 @@ body {
 /* Medium devices (landscape tablets, 868px and up) */
 @media only screen and (min-width: 868px) {
     .main-header { 
-        max-height: 10%; 
-        padding-top: 18px;
-        padding-bottom: 10px;
+        max-height: 10% !important; 
+        padding-top: 18px !important;
+        padding-bottom: 10px !important;
     }
 
     .logo {
@@ -449,21 +457,12 @@ body {
 
 /* 
 Issues:
-    Slider headings
     Don't show left or right arrow at end of respective slider side
-    fa-angle sizing
-        Show on hover of entire preview
-    Profile icon??
-        Remove or change shape??
     Browser compatibility (fa fonts)
     
 Mobile Issues:
-    View too small
-        Font too small
-        Too much shown in view
-    Landscape orientation issues
+    Landscape orientation
     Footer spacing
-    Nav spacing (Use side menu instead or onclick??; Only logo and search visible)
-        Search drops when browse dropdown opens
-        Can't put away browse (remove)
+    Place hamburger left of logo
+    Gap between side menu top and nav
 */

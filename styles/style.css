@@ -23,7 +23,7 @@ body {
   top: 0;
   z-index: 3;
   background: transparent;
-  padding: 1.8% 4% 0 4%;
+  padding: 3% 4% 3% 2%;
   -webkit-transition: background .4s;
   transition: background .4s;
 }
@@ -32,14 +32,22 @@ body {
   background: #191919;
 }
 
+.main-header .fa-bars {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  position: relative;
+  margin: 0 4px 0 0;
+  float: left;
+}
+
 .main-header .logo {
-  width: 7%;
+  width: 12%;
   height: auto;
   min-width: 76px;
   float: left;
-  margin: 10px 20px 0 0;
   position: relative;
-  bottom: 4px;
 }
 
 .main-header .primary-nav {
@@ -47,16 +55,6 @@ body {
   min-height: 12px;
   list-style-type: none;
   overflow: hidden;
-}
-
-.main-header .primary-nav .fa-bars {
-  color: white;
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  position: relative;
-  top: 4px;
-  margin: 0;
 }
 
 .main-header .primary-nav a {
@@ -85,8 +83,8 @@ body {
 .main-header .secondary-nav {
   float: right;
   color: white;
+  margin: 5px 0 0 0;
   position: relative;
-  bottom: 18px;
 }
 
 .main-header .secondary-nav .search-box {
@@ -248,7 +246,7 @@ body {
   position: relative;
   top: 30px;
   margin: 50px 0 0 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 18px;
   z-index: 2;
 }
 
@@ -292,12 +290,15 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .main-header {
+    padding: 3% 4% 6% 2% !important;
+  }
   .fa-bars {
     font-size: 26px !important;
-    top: 5px !important;
+    bottom: 0.4vw !important;
   }
   .secondary-nav {
-    bottom: 3vw !important;
+    bottom: 1vw !important;
   }
   .fa-search {
     font-size: 18px !important;
@@ -305,7 +306,7 @@ body {
   }
   .logo {
     width: 11% !important;
-    margin: 8px 20px 0 0 !important;
+    bottom: 0.4vw !important;
   }
   .slider-header {
     font-size: 19px !important;
@@ -315,9 +316,9 @@ body {
 /* Medium devices (landscape tablets, 868px and up) */
 @media only screen and (min-width: 868px) {
   .main-header {
-    max-height: 10%;
-    padding-top: 18px;
-    padding-bottom: 10px;
+    max-height: 10% !important;
+    padding-top: 18px !important;
+    padding-bottom: 10px !important;
   }
   .logo {
     width: 10% !important;
@@ -418,22 +419,13 @@ body {
 
 /* 
 Issues:
-    Slider headings
     Don't show left or right arrow at end of respective slider side
-    fa-angle sizing
-        Show on hover of entire preview
-    Profile icon??
-        Remove or change shape??
     Browser compatibility (fa fonts)
     
 Mobile Issues:
-    View too small
-        Font too small
-        Too much shown in view
-    Landscape orientation issues
+    Landscape orientation
     Footer spacing
-    Nav spacing (Use side menu instead or onclick??; Only logo and search visible)
-        Search drops when browse dropdown opens
-        Can't put away browse (remove)
+    Place hamburger left of logo
+    Gap between side menu top and nav
 */
 /*# sourceMappingURL=style.css.map */
