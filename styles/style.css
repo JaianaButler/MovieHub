@@ -146,8 +146,22 @@ body {
 }
 
 .main-container {
+  width: 100%;
+  height: auto;
   /* For large sliders */
   /* For medium sliders */
+  /*footer{
+        //background-color: rgb(36, 36, 36);
+        width: 100%; height: 1%;
+        color: rgb(150, 150, 150);
+        font-size: 1.2rem;
+        text-align: center;
+        position: relative; bottom: 50px;
+
+        .footer-item {
+
+        }
+    }*/
 }
 
 .main-container .billboard-pane {
@@ -271,14 +285,15 @@ body {
   height: 100%;
 }
 
-.main-container footer {
+footer {
   width: 100%;
-  height: 1%;
+  height: auto;
   color: #969696;
-  font-size: 1.2rem;
+  font-size: 16px;
   text-align: center;
   position: relative;
-  bottom: 50px;
+  top: 100px;
+  padding: 0 0 40px 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -310,6 +325,9 @@ body {
   }
   .slider-header {
     font-size: 19px !important;
+  }
+  footer {
+    font-size: 18px;
   }
 }
 
@@ -363,6 +381,10 @@ body {
   .med-slider-wrapper {
     height: 14vw !important;
   }
+  footer {
+    top: 0px;
+    padding: 0 0 50px 0;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -379,6 +401,9 @@ body {
   }
   .slider-wrapper {
     top: -60px !important;
+  }
+  footer {
+    font-size: 20px;
   }
 }
 
@@ -415,16 +440,14 @@ body {
     margin: 0 0 66px 0 !important;
     padding: 0 4vw 0 4vw !important;
   }
+  footer {
+    font-size: 21px;
+  }
 }
 
 /* 
 Issues:
     Don't show left or right arrow at end of respective slider side
     Browser compatibility (fa fonts)
-    
-Mobile Issues:
-    Landscape orientation
-    Footer spacing
-    Gap between side menu top and nav on some landscape orientations
 */
 /*# sourceMappingURL=style.css.map */

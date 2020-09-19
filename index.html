@@ -604,12 +604,12 @@
                       </div>
                 </div>
             </div>
-            
-            <footer>
-                <div class="footer-item">About &emsp; Help &emsp; Jobs &emsp; Accessibility</div>
-                <div class="footer-item">&#169;2020 MovieHub</div>
-            </footer>
         </div>
+
+        <footer>
+            <div class="footer-item">About &emsp; Help &emsp; Jobs &emsp; Accessibility</div>
+            <div class="footer-item">&#169;2020 MovieHub</div>
+        </footer>
 
         <!-- Javascript -->
         <script src="js/script.js"></script>
@@ -619,40 +619,9 @@
 
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <!--<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>-->
+
         <script>
-            /*const config = {
-                type: 'slider',
-                perView: 4,
-                perTouch: 4,
-                breakpoints: {
-                    868: {
-                        perView: 3
-                    }
-                },
-                bound: true,
-                rewind: false,
-                //peek: 50
-            }
-            new Glide('.glide', config).mount()*/
-
-            /*const lgsliders = document.querySelectorAll('.lg-glide')
-            const lgconfig = {
-                type: 'slider',
-                perView: 4,
-                perTouch: 4,
-                breakpoints: {
-                    868: {
-                        perView: 3
-                    }
-                },
-                bound: true,
-                rewind: false
-            }
-            lgsliders.forEach(item => {
-                new Glide(item, lgconfig).mount()
-            })*/
-
-            const sliders = document.querySelectorAll('.glide')
+            const sliders = document.querySelectorAll('.glide');
             const config = {
                 type: 'slider',
                 perView: 4,
@@ -672,11 +641,10 @@
                 },
                 bound: true,
                 rewind: true
-            }
+            };
             sliders.forEach(item => {
                 new Glide(item, config).mount()
-            })
-
+            });
         </script>
     </body>
 </html>

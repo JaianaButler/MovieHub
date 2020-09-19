@@ -145,6 +145,7 @@ body {
 
 //*** MAIN CONTAINER CONTENT ***//
 .main-container {
+    width: 100%; height: auto; // ???
 
     .billboard-pane {
         //width: 100%; height: 100%;
@@ -274,7 +275,7 @@ body {
     .fa-angle-right {}
 
     //*** FOOTER STYLE ***//
-    footer{
+    /*footer{
         //background-color: rgb(36, 36, 36);
         width: 100%; height: 1%;
         color: rgb(150, 150, 150);
@@ -285,7 +286,17 @@ body {
         .footer-item {
 
         }
-    }
+    }*/
+}
+
+footer{
+    width: 100%; height: auto;
+    color: rgb(150, 150, 150);
+    font-size: 16px;
+    text-align: center;
+    position: relative; 
+    top: 100px;
+    padding: 0 0 40px 0;
 }
 
 
@@ -326,6 +337,10 @@ body {
 
     .slider-header { // !!!
         font-size: 19px !important;
+    }
+
+    footer{
+        font-size: 18px;
     }
 } 
 
@@ -392,6 +407,11 @@ body {
     .med-slider-wrapper { 
         height: 14vw !important;
     }
+
+    footer{
+        top: 0px;
+        padding: 0 0 50px 0;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -407,8 +427,13 @@ body {
     .slider-header {
         font-size: 22px !important;
     }
+
     .slider-wrapper {
         top: -60px !important;
+    }
+
+    footer{
+        font-size: 20px;
     }
 } 
 
@@ -452,6 +477,10 @@ body {
         margin: 0 0 66px 0 !important;
         padding: 0 4vw 0 4vw !important;
     }
+
+    footer{
+        font-size: 21px;
+    }
 }
 
 
@@ -459,9 +488,4 @@ body {
 Issues:
     Don't show left or right arrow at end of respective slider side
     Browser compatibility (fa fonts)
-    
-Mobile Issues:
-    Landscape orientation
-    Footer spacing
-    Gap between side menu top and nav on some landscape orientations
 */
