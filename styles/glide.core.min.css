@@ -11,7 +11,7 @@
 }
 .glide__slides{
     position:relative;
-    width:100%;
+    width:100%; height: 100%;
     list-style:none;
     backface-visibility:hidden;
     transform-style:preserve-3d;

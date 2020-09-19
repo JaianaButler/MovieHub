@@ -239,16 +239,16 @@ body {
 
 .main-container .slider-header {
   color: white;
-  font-size: 3.4vw;
-  margin: 0 0 1vw 0;
+  font-size: 16px;
+  margin: 0 0 8px 0;
 }
 
 .main-container .slider-wrapper {
   width: 100%;
   position: relative;
-  top: 4vw;
-  margin: 8% 0 0 0;
-  padding: 0 0vw 0 4vw;
+  top: 30px;
+  margin: 50px 0 0 0;
+  padding: 0 0 0 20px;
   z-index: 2;
 }
 
@@ -262,7 +262,7 @@ body {
 }
 
 .main-container .lg-slider-wrapper .lg-preview img {
-  height: 98%;
+  height: 100%;
 }
 
 .main-container .med-slider-wrapper {
@@ -270,7 +270,7 @@ body {
 }
 
 .main-container .med-slider-wrapper .med-preview img {
-  height: 95%;
+  height: 100%;
 }
 
 .main-container footer {
@@ -306,6 +306,9 @@ body {
   .logo {
     width: 11% !important;
     margin: 8px 20px 0 0 !important;
+  }
+  .slider-header {
+    font-size: 19px !important;
   }
 }
 
@@ -345,30 +348,19 @@ body {
     padding: 7px 0 0 0 !important;
   }
   .slider-header {
-    font-size: 1.6vw !important;
+    font-size: 20px !important;
   }
   .slider-wrapper {
     position: relative !important;
-    top: -6vw !important;
-    margin: 0 0 4% 0 !important;
+    top: -50px !important;
+    margin: 0 0 66px 0 !important;
     padding: 0 4vw 0 4vw !important;
   }
   .lg-slider-wrapper {
     height: 32vw !important;
   }
-  .lg-slider-wrapper .lg-preview .fa-play-circle {
-    top: 13vw !important;
-    left: 8vw !important;
-  }
   .med-slider-wrapper {
     height: 14vw !important;
-  }
-  .med-slider-wrapper .med-preview .fa-play-circle {
-    top: 4vw !important;
-    left: 9vw !important;
-  }
-  .fa-play-circle {
-    font-size: 6vw !important;
   }
 }
 
@@ -380,6 +372,12 @@ body {
   }
   .nav-tab {
     font-size: 18px !important;
+  }
+  .slider-header {
+    font-size: 22px !important;
+  }
+  .slider-wrapper {
+    top: -60px !important;
   }
 }
 
@@ -407,6 +405,15 @@ body {
   .profile-icon p {
     font-size: 20px !important;
   }
+  .slider-header {
+    font-size: 24px !important;
+  }
+  .slider-wrapper {
+    position: relative !important;
+    top: -85px !important;
+    margin: 0 0 66px 0 !important;
+    padding: 0 4vw 0 4vw !important;
+  }
 }
 
 /* 
@@ -417,7 +424,7 @@ Issues:
         Show on hover of entire preview
     Profile icon??
         Remove or change shape??
-    Browser compatibility (fonts)
+    Browser compatibility (fa fonts)
     
 Mobile Issues:
     View too small
