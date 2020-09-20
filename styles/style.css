@@ -138,7 +138,7 @@ body {
 }
 
 .main-header .secondary-nav .search-box input[type="text"]:focus {
-  width: 200px;
+  width: 150px;
   padding: 0 10px;
   outline: none;
   background: none;
@@ -170,7 +170,7 @@ body {
 }
 
 .main-header .secondary-nav .search-box input[type="text"]:focus + span {
-  width: 200px;
+  width: 150px;
 }
 
 .main-header .secondary-nav .search-box input[type="text"]:focus + span::before {
@@ -273,6 +273,7 @@ body {
   display: block;
 }
 
+/* Used in side-nav and main-header */
 .profile-icon .circle {
   border-radius: 50%;
   width: 100%;
@@ -486,12 +487,6 @@ footer {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .fa-search {
-    color: yellow !important;
-  }
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .main-header {
@@ -503,10 +498,6 @@ footer {
   }
   .secondary-nav {
     bottom: 0.3vw !important;
-  }
-  .fa-search {
-    font-size: 18px !important;
-    color: red !important;
   }
   .logo {
     width: 11% !important;
@@ -543,9 +534,6 @@ footer {
   .secondary-nav {
     bottom: 0 !important;
   }
-  .fa-search {
-    color: green !important;
-  }
   .profile-icon {
     display: inline !important;
   }
@@ -562,7 +550,7 @@ footer {
     position: relative !important;
     top: -50px !important;
     margin: 0 0 66px 0 !important;
-    padding: 0 4vw 0 4vw !important;
+    padding: 0 4vw !important;
   }
   .lg-slider-wrapper {
     height: 32vw !important;
@@ -578,10 +566,6 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .fa-search {
-    font-size: 18px !important;
-    color: blue !important;
-  }
   .nav-tab {
     font-size: 18px !important;
   }
@@ -598,10 +582,6 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .fa-search {
-    font-size: 20px !important;
-    color: orange !important;
-  }
   .secondary-nav {
     top: 3px !important;
   }
@@ -627,10 +607,12 @@ footer {
     position: relative !important;
     top: -88px !important;
     margin: 0 0 66px 0 !important;
-    padding: 0 4vw 0 4vw !important;
+    padding: 0 4vw !important;
   }
   footer {
     font-size: 21px;
   }
 }
+
+/*Scroll for side menu on mobile lanscape */
 /*# sourceMappingURL=style.css.map */

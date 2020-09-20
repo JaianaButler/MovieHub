@@ -86,7 +86,7 @@ body {
 
         .search-box {
             float: left;
-            margin: 0 6px 0 0; //!!!
+            margin: 0 6px 0 0;
             position: relative;
             bottom: 5px;
             right: 2px;
@@ -114,12 +114,12 @@ body {
                         cursor: text;
 
                     } + span {
-                        background: transparent; // ?
+                        background: transparent;
                     }
                 }
                 
                 &:focus {
-                    width: 200px;
+                    width: 150px;
                     padding: 0 10px;
                     outline: none;
                     background: none;
@@ -131,9 +131,9 @@ body {
                     }
                     
                     + span {
-                        width: 200px;
+                        width: 150px;
                         &::before {
-                            width:2px;
+                            width: 2px;
                             opacity: 0;
                             transition: all .25s ease-in;
                         }
@@ -238,7 +238,7 @@ body {
     }
 }
 
-// Used in side-nav and main-header //
+/* Used in side-nav and main-header */
 .profile-icon {
 
     .circle {
@@ -255,13 +255,13 @@ body {
     }
 }
 
-//*** MOBILE SIDE NAVIGATION CONTENT ***//
+//*** MOBILE SIDE NAVIGATION STYLE ***//
 .side-nav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 3;
-    top: 9vw; //top: 44px;
+    top: 9vw;
     left: 0;
     background: $primaryColor;
     overflow-x: hidden;
@@ -317,9 +317,9 @@ body {
     }
 }
 
-//*** MAIN CONTAINER CONTENT ***//
+//*** MAIN CONTAINER STYLES ***//
 .main-container {
-    width: 100%; height: auto; // ???
+    width: 100%; height: auto;
 
     .billboard-pane {
         display: none;
@@ -360,7 +360,7 @@ body {
                     float: left;
                     margin: 0 2% 0 0;
 
-                    .play-button { // !!!
+                    .play-button {
                         width: 8vw; height: 3vw;
                         background: $secondaryColor;
                         border-radius: 6%;
@@ -374,7 +374,7 @@ body {
                         }
                     }
 
-                    .add-button { // !!!
+                    .add-button {
                         width: 18vw; height: auto;
                         background: transparent;
                         border: none;
@@ -388,7 +388,7 @@ body {
                         }
                     }
                 }
-                .play-item {}
+
                 .add-item {
                     padding: 4px 0 0 0;
                 }
@@ -397,13 +397,13 @@ body {
     }
 
     //*** SLIDER STYLES ***//
-    .slider-header { // !!!
+    .slider-header {
         color: $secondaryColor;
         font-size: 16px;
         margin: 0 0 8px 0;
     }
 
-    .slider-wrapper { // !!!
+    .slider-wrapper {
         width: 100%;
         position: relative; 
         top: 30px; 
@@ -422,7 +422,7 @@ body {
         height: 54vw;
 
         .lg-preview {
-            
+
             img { 
                 height: 100%; 
             }
@@ -458,9 +458,7 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .fa-search { // Remove
-        color: yellow !important;
-    }
+
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -476,11 +474,6 @@ footer{
 
     .secondary-nav {
         bottom: 0.3vw !important;
-    }
-
-    .fa-search { // Remove
-        font-size: 18px !important;
-        color: red !important;
     }
     
     .logo {
@@ -526,10 +519,6 @@ footer{
         bottom: 0 !important;
     }
 
-    .fa-search { // Remove
-        color: green !important;
-    }
-
     .profile-icon { 
         display: inline !important;
     }
@@ -550,7 +539,7 @@ footer{
        position: relative !important;
        top: -50px !important;
        margin: 0 0 66px 0 !important;
-       padding: 0 4vw 0 4vw !important;
+       padding: 0 4vw !important;
     }
 
     .lg-slider-wrapper { 
@@ -569,10 +558,6 @@ footer{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .fa-search {  // Remove
-        font-size: 18px !important;
-        color: blue !important;
-    }
     .nav-tab {
         font-size: 18px !important;
     }
@@ -592,11 +577,6 @@ footer{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .fa-search { // Remove
-        font-size: 20px !important;
-        color: orange !important;
-    }
-
     .secondary-nav {
        top: 3px !important;
     }
@@ -628,10 +608,12 @@ footer{
         position: relative !important;
         top: -88px !important;
         margin: 0 0 66px 0 !important;
-        padding: 0 4vw 0 4vw !important;
+        padding: 0 4vw !important;
     }
 
     footer{
         font-size: 21px;
     }
 }
+
+/*Scroll for side menu on mobile lanscape */
