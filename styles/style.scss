@@ -13,9 +13,6 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
     margin: 0 0 0 0;
 }
-.fa {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
 
 //*** MAIN HEADER CONTENT ***//
 .main-header {
@@ -25,7 +22,7 @@ body {
     top: 0;
     z-index: 3;
     background: transparent;
-    padding: 3% 4% 3% 2%; //padding: 1.8% 4% 0 4%;
+    padding: 3% 4% 3% 2%;
     transition: background .4s;
 
     &.scrolled { background: $primaryColor; }
@@ -34,9 +31,8 @@ body {
         color: $secondaryColor;
         background: transparent;
         border: none;
-        font-size: 24px; //font-size: 7vw;
+        font-size: 24px;
         position: relative;
-        //top: 4px;
         margin: 0 4px 0 0;
         float: left;
 
@@ -49,8 +45,7 @@ body {
         width: 12%; height: auto; 
         min-width: 76px;
         float: left;
-        //margin: 10px 0 0 0; //margin: 2% 1% 1% 0;
-        position: relative; //bottom: 4px;
+        position: relative;
     }
 
     .primary-nav {
@@ -88,21 +83,21 @@ body {
         color: $secondaryColor;
         margin: 5px 0 0 0;
         position: relative;
-        //bottom: 18px;
 
         .search-box {
             float: left;
-            margin: 0 0 0 0; //!!!
+            margin: 0 6px 0 0; //!!!
 
             .fa-search {
-                font-size: 16px; //font-size: 4vw;
+                font-size: 16px;
                 color: $secondaryColor;
             }
         }
 
         .profile-icon {
             float: right;
-            position: relative; //bottom: 22px;
+            position: relative;
+            display: inline-block;
             bottom: 6px;
             left: 14px;
             display: none;
@@ -115,7 +110,56 @@ body {
                     top: 7px;
                 }
             }
+
+            .arrow-up {
+                height: 0;
+                width: 0;
+                display: none;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid $secondaryColor;
+                position: relative;
+                bottom: 10px;
+                left: 12px;
+            }
+
+            .profile-dropdown {
+                border-top: 1px solid $secondaryColor;
+                display: none;
+                position: relative;
+                bottom: 4px;
+                right: 110px;
+                background: rgba(25, 25, 25, 0.9);
+                min-width: 140px;
+
+                li:hover {
+                    background: rgba(190, 190, 190, 0.19);
+                }
+
+                a {
+                    color: $secondaryColor;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+
         }
+
+        .profile-icon:hover, .arrow-up:hover {
+            .arrow-up {
+                display: inline;
+            }
+            
+            .profile-dropdown{
+               display: block;
+
+               &:hover {
+                   display: block;
+               }
+           }
+        }
+
     }
 }
 
@@ -203,7 +247,6 @@ body {
     width: 100%; height: auto; // ???
 
     .billboard-pane {
-        //width: 100%; height: 100%;
         display: none;
 
         .title-image {
@@ -232,7 +275,6 @@ body {
                     font-size: 1.4vw;
                     line-height: 150%;
                     margin: 4% 0 0 0;
-                    //text-shadow: 2px 2px 4px $primaryColor;
                 }
             }
 
@@ -282,9 +324,8 @@ body {
     //*** SLIDER STYLES ***//
     .slider-header { // !!!
         color: $secondaryColor;
-        font-size: 16px; //3.4vw;
-        margin: 0 0 8px 0;//0 0 1vw 0;
-        //position: relative; top: 4vh;
+        font-size: 16px;
+        margin: 0 0 8px 0;
     }
 
     .slider-wrapper { // !!!
@@ -325,25 +366,9 @@ body {
             }
         }
     }
-
-    .fa-angle-left {}
-    .fa-angle-right {}
-
-    //*** FOOTER STYLE ***//
-    /*footer{
-        //background-color: rgb(36, 36, 36);
-        width: 100%; height: 1%;
-        color: rgb(150, 150, 150);
-        font-size: 1.2rem;
-        text-align: center;
-        position: relative; bottom: 50px;
-
-        .footer-item {
-
-        }
-    }*/
 }
 
+//*** FOOTER STYLE ***//
 footer{
     width: 100%; height: auto;
     color: rgb(150, 150, 150);
@@ -367,7 +392,6 @@ footer{
 @media only screen and (min-width: 600px) {
     .main-header {
         padding: 3% 4% 6% 2% !important;
-        //padding: 3% 4% 3% 2%;
     }
 
     .fa-bars {
@@ -387,10 +411,9 @@ footer{
     .logo {
         width: 11% !important;
         bottom: 0.4vw !important;
-        //margin: 8px 20px 0 0 !important;
     }
 
-    .slider-header { // !!!
+    .slider-header { 
         font-size: 19px !important;
     }
 
@@ -540,9 +563,6 @@ footer{
 
 
 /* 
-Issues:
-    Don't show left or right arrow at end of respective slider side
-    Finish side menu
-    Landscape tablet size maybe should be changed to smaller device's layout
-    Dropdown for profile icon (other profiles, account, help, sign out)
+To-do:
+    Search bar
 */

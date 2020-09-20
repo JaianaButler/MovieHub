@@ -24,7 +24,7 @@
     </head>
     <body>
         <header class="main-header">
-            <button class="fa fa-bars"></button>
+            <button class="fa fa-bars"></button> <!-- side nav hamburger button -->
             <img src="images/logo.png" alt="Movie Hub Logo" class="logo">
             <ul class="primary-nav">
                 <li class="nav-tab"><a href="#" class="active" title="Go to home page">Home</a></li>
@@ -32,19 +32,26 @@
                 <li class="nav-tab"><a href="#" title="See all movies">Movies</a></li>
                 <li class="nav-tab"><a href="#" title="Go to My Hub">My Hub</a></li>
             </ul>
+
             <nav class="secondary-nav">
                 <div class="search-box">
                     <span class="fa fa-search"></span>
                     <span>Search</span>
                 </div>
 
-                <div class="profile-icon">
-                    <div class="circle"><p>J</p></div>
+                <div class="profile-icon"> <!-- dropdown -->
+                    <div class="circle" role="button"><p>J</p></div>
+                    <span class="arrow-up"></span>
+                    <ul class="profile-dropdown"> <!-- dropdown-content -->
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
-        <nav class="side-nav"> 
+        <nav class="side-nav"> <!-- side nav content -->
             <div class="profile-icon">
                 <div class="circle"><p>J</p></div>
             </div>
