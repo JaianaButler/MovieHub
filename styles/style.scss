@@ -87,6 +87,81 @@ body {
         .search-box {
             float: left;
             margin: 0 6px 0 0; //!!!
+            position: relative;
+            bottom: 5px;
+            right: 2px;
+
+            input[type="text"] {
+                border: 1px solid $secondaryColor;
+                border-radius: 20px;
+                background: none;
+                width: 25px;
+                height: 25px;
+                transition: all .25s ease-in .25s;
+                color: transparent;
+                font-size: .75rem;
+                line-height:25px;
+                content: 'hello';
+
+                &::placeholder {
+                    color: transparent;
+                }
+                
+                &:hover {
+                    cursor: pointer;
+                    
+                    &:focus {
+                        cursor: text;
+
+                    } + span {
+                        background: transparent; // ?
+                    }
+                }
+                
+                &:focus {
+                    width: 200px;
+                    padding: 0 10px;
+                    outline: none;
+                    background: none;
+                    color: $secondaryColor;
+
+                    &::placeholder {
+                        transition: 1s;
+                        color: $secondaryColor;
+                    }
+                    
+                    + span {
+                        width: 200px;
+                        &::before {
+                            width:2px;
+                            opacity: 0;
+                            transition: all .25s ease-in;
+                        }
+                    }
+                }
+                + span {
+                    z-index: -1;
+                    position: absolute;
+                    border: 2px solid $secondaryColor;
+                    top: 0;
+                    width: 25px;
+                    height: 25px;
+                    transition: all .25s ease-in .25s;
+                    border-radius: 25px;
+                    left: 0;
+                    &::before {
+                        transition: all .25s ease-in .5s;
+                        transform-origin: left top;
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 5px;
+                        border-radius: 5px;
+                        background: $secondaryColor;
+                        transform: rotate(45deg) translate(26px, -2px);
+                    }
+                }
+            }
 
             .fa-search {
                 font-size: 16px;
@@ -383,7 +458,7 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .fa-search {
+    .fa-search { // Remove
         color: yellow !important;
     }
 } 
@@ -400,10 +475,10 @@ footer{
     }
 
     .secondary-nav {
-        bottom: 1vw !important;
+        bottom: 0.3vw !important;
     }
 
-    .fa-search { 
+    .fa-search { // Remove
         font-size: 18px !important;
         color: red !important;
     }
@@ -451,7 +526,7 @@ footer{
         bottom: 0 !important;
     }
 
-    .fa-search {
+    .fa-search { // Remove
         color: green !important;
     }
 
@@ -494,7 +569,7 @@ footer{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .fa-search { 
+    .fa-search {  // Remove
         font-size: 18px !important;
         color: blue !important;
     }
@@ -517,7 +592,7 @@ footer{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .fa-search {
+    .fa-search { // Remove
         font-size: 20px !important;
         color: orange !important;
     }
@@ -560,9 +635,3 @@ footer{
         font-size: 21px;
     }
 }
-
-
-/* 
-To-do:
-    Search bar
-*/

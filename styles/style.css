@@ -90,6 +90,122 @@ body {
 .main-header .secondary-nav .search-box {
   float: left;
   margin: 0 6px 0 0;
+  position: relative;
+  bottom: 5px;
+  right: 2px;
+}
+
+.main-header .secondary-nav .search-box input[type="text"] {
+  border: 1px solid white;
+  border-radius: 20px;
+  background: none;
+  width: 25px;
+  height: 25px;
+  -webkit-transition: all .25s ease-in .25s;
+  transition: all .25s ease-in .25s;
+  color: transparent;
+  font-size: .75rem;
+  line-height: 25px;
+  content: 'hello';
+}
+
+.main-header .secondary-nav .search-box input[type="text"]::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:-ms-input-placeholder {
+  color: transparent;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]::-ms-input-placeholder {
+  color: transparent;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]::placeholder {
+  color: transparent;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:hover {
+  cursor: pointer;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:hover:focus {
+  cursor: text;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:hover + span {
+  background: transparent;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:focus {
+  width: 200px;
+  padding: 0 10px;
+  outline: none;
+  background: none;
+  color: white;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:focus::-webkit-input-placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:focus:-ms-input-placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:focus::-ms-input-placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:focus::placeholder {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:focus + span {
+  width: 200px;
+}
+
+.main-header .secondary-nav .search-box input[type="text"]:focus + span::before {
+  width: 2px;
+  opacity: 0;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.main-header .secondary-nav .search-box input[type="text"] + span {
+  z-index: -1;
+  position: absolute;
+  border: 2px solid white;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  -webkit-transition: all .25s ease-in .25s;
+  transition: all .25s ease-in .25s;
+  border-radius: 25px;
+  left: 0;
+}
+
+.main-header .secondary-nav .search-box input[type="text"] + span::before {
+  -webkit-transition: all .25s ease-in .5s;
+  transition: all .25s ease-in .5s;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-radius: 5px;
+  background: white;
+  -webkit-transform: rotate(45deg) translate(26px, -2px);
+          transform: rotate(45deg) translate(26px, -2px);
 }
 
 .main-header .secondary-nav .search-box .fa-search {
@@ -386,7 +502,7 @@ footer {
     bottom: 0.4vw !important;
   }
   .secondary-nav {
-    bottom: 1vw !important;
+    bottom: 0.3vw !important;
   }
   .fa-search {
     font-size: 18px !important;
@@ -517,9 +633,4 @@ footer {
     font-size: 21px;
   }
 }
-
-/* 
-To-do:
-    Search bar
-*/
 /*# sourceMappingURL=style.css.map */
