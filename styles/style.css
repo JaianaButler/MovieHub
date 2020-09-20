@@ -42,6 +42,10 @@ body {
   float: left;
 }
 
+.main-header .fa-bars:hover {
+  cursor: pointer;
+}
+
 .main-header .logo {
   width: 12%;
   height: auto;
@@ -63,7 +67,7 @@ body {
 }
 
 .main-header .primary-nav a:hover {
-  color: #c8c8c8;
+  color: #bebebe;
 }
 
 .main-header .primary-nav a.active {
@@ -102,12 +106,16 @@ body {
   position: relative;
   bottom: 6px;
   left: 14px;
+  display: none;
   width: 30px;
   height: 30px;
-  display: none;
 }
 
-.main-header .secondary-nav .profile-icon .circle {
+.main-header .secondary-nav .profile-icon .circle p {
+  top: 7px;
+}
+
+.profile-icon .circle {
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -115,10 +123,9 @@ body {
   text-align: center;
 }
 
-.main-header .secondary-nav .profile-icon .circle p {
+.profile-icon .circle p {
   color: #191919;
   position: relative;
-  top: 7px;
 }
 
 .side-nav {
@@ -133,16 +140,53 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 20px 0 0 0;
+  -webkit-box-shadow: -6px 28px 10px black;
+          box-shadow: -6px 28px 10px black;
+}
+
+.side-nav hr {
+  width: 90%;
+}
+
+.side-nav .profile-icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 30px;
+  margin: 0 0 10px 0;
+  display: inline-block;
+}
+
+.side-nav .profile-icon .circle p {
+  top: 10px;
+  font-size: 20px;
+}
+
+.side-nav a, .side-nav span {
+  color: white;
+}
+
+.side-nav a:hover, .side-nav span:hover {
+  color: #bebebe;
+}
+
+.side-nav span {
+  position: relative;
+  top: 10px;
+  left: 40px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .side-nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: white;
+  font-size: 22px;
   display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.0s;
+  transition: 0.0s;
 }
 
 .main-container {
@@ -225,7 +269,7 @@ body {
 }
 
 .main-container .billboard-pane .fill-container .control-buttons .control-item .play-button:hover {
-  background: #c8c8c8;
+  background: #bebebe;
   cursor: pointer;
 }
 
@@ -241,7 +285,7 @@ body {
 
 .main-container .billboard-pane .fill-container .control-buttons .control-item .add-button:hover {
   cursor: pointer;
-  color: #c8c8c8;
+  color: #bebebe;
 }
 
 .main-container .billboard-pane .fill-container .control-buttons .add-item {
@@ -447,6 +491,8 @@ footer {
 /* 
 Issues:
     Don't show left or right arrow at end of respective slider side
-    Browser compatibility (fa fonts)
+    Finish side menu
+    Landscape tablet size maybe should be changed to smaller device's layout
+    Dropdown for profile icon (other profiles, account, help, sign out)
 */
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 $primaryColor: rgb(25, 25, 25);
 $secondaryColor: white;
-$hoverColor: rgb(200, 200, 200);
+$hoverColor: rgb(190, 190, 190);
 
 * {
     box-sizing: border-box;
@@ -39,6 +39,10 @@ body {
         //top: 4px;
         margin: 0 4px 0 0;
         float: left;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .logo {
@@ -91,7 +95,7 @@ body {
             margin: 0 0 0 0; //!!!
 
             .fa-search {
-                font-size: 16px;//font-size: 4vw;
+                font-size: 16px; //font-size: 4vw;
                 color: $secondaryColor;
             }
         }
@@ -101,21 +105,33 @@ body {
             position: relative; //bottom: 22px;
             bottom: 6px;
             left: 14px;
-            width: 30px; height: 30px; //!!!!!!!!!!!!!
             display: none;
+            width: 30px;
+            height: 30px;
 
             .circle {
-                border-radius: 50%;
-                width: 100%; height: 100%;
-                background: $secondaryColor;
-                text-align: center;
 
                 p {
-                    color: $primaryColor;
-                    position: relative;
                     top: 7px;
                 }
             }
+        }
+    }
+}
+
+// Used in side-nav and main-header //
+.profile-icon {
+
+    .circle {
+        border-radius: 50%;
+        width: 100%; 
+        height: 100%;
+        background: $secondaryColor;
+        text-align: center;
+
+        p {
+            color: $primaryColor;
+            position: relative;
         }
     }
 }
@@ -126,20 +142,59 @@ body {
     width: 0;
     position: fixed;
     z-index: 3;
-    top: 9vw;//top: 44px;
+    top: 9vw; //top: 44px;
     left: 0;
     background: $primaryColor;
     overflow-x: hidden;
     transition: 0.5s;
     padding: 20px 0 0 0;
+    box-shadow: -6px 28px 10px black;
+
+    hr {
+        width: 90%;
+    }
+
+    .profile-icon {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left: 30px;
+        margin: 0 0 10px 0;
+        display: inline-block;
+
+        .circle {
+
+            p {
+                top: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    a, span {
+        color: $secondaryColor;
+
+        &:hover {
+            color: $hoverColor; 
+        }
+    }
+
+    span {
+        position: relative;
+        top: 10px;
+        left: 40px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+    }
 
     a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 25px;
-        color: $secondaryColor;
+        font-size: 22px;
         display: block;
-        transition: 0.3s;
+        transition: 0.0s;
     }
 }
 
@@ -487,5 +542,7 @@ footer{
 /* 
 Issues:
     Don't show left or right arrow at end of respective slider side
-    Browser compatibility (fa fonts)
+    Finish side menu
+    Landscape tablet size maybe should be changed to smaller device's layout
+    Dropdown for profile icon (other profiles, account, help, sign out)
 */
