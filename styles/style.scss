@@ -99,9 +99,10 @@ body {
                 height: 25px;
                 transition: all .25s ease-in .25s;
                 color: transparent;
-                font-size: .75rem;
+                font-size: 0.95rem;
                 line-height:25px;
                 content: 'hello';
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
 
                 &::placeholder {
                     color: transparent;
@@ -265,6 +266,7 @@ body {
     left: 0;
     background: $primaryColor;
     overflow-x: hidden;
+    overflow-y: scroll;
     transition: 0.5s;
     padding: 20px 0 0 0;
     box-shadow: -6px 28px 10px black;
@@ -615,5 +617,3 @@ footer{
         font-size: 21px;
     }
 }
-
-/*Scroll for side menu on mobile lanscape */

@@ -104,9 +104,10 @@ body {
   -webkit-transition: all .25s ease-in .25s;
   transition: all .25s ease-in .25s;
   color: transparent;
-  font-size: .75rem;
+  font-size: 0.95rem;
   line-height: 25px;
   content: 'hello';
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .main-header .secondary-nav .search-box input[type="text"]::-webkit-input-placeholder {
@@ -296,6 +297,7 @@ body {
   left: 0;
   background: #191919;
   overflow-x: hidden;
+  overflow-y: scroll;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 20px 0 0 0;
@@ -613,6 +615,4 @@ footer {
     font-size: 21px;
   }
 }
-
-/*Scroll for side menu on mobile lanscape */
 /*# sourceMappingURL=style.css.map */
