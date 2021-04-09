@@ -1,2 +1,3 @@
 # Movie Site UI
-Netflix/Hulu-inspired TV and movie site
+Responsive Netflix/Hulu-inspired TV and movie site
+
