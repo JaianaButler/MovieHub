@@ -1,4 +1,4 @@
-# Movie Site UI
+# MovieHub - Movie Site UI
 Responsive Netflix/Hulu-inspired TV and movie site. Utilizes Glide.js module to implement carousels.
 
 
